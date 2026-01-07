@@ -40,7 +40,7 @@
       <td align="center"><b>Post Job</b></td>
     </tr>
     <tr>
-      <td><img src="assets/images/onboarding_1.png" width="200" alt="Onboarding Screen"></td>
+      <td><img src="assets/images/dash.png" width="200" alt="Onboarding Screen"></td>
       <td><img src="screenshots/dashboard.png" width="200" alt="Dashboard Screen"></td>
       <td><img src="screenshots/detail.png" width="200" alt="Detail Screen"></td>
       <td><img src="screenshots/post_job.png" width="200" alt="Post Job Screen"></td>
