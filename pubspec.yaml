@@ -1,0 +1,70 @@
+name: gawe
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Sebaiknya gunakan rentang yang valid
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Dependensi yang sudah Anda miliki
+  flutter_svg: ^2.0.10+1
+  google_fonts: ^6.2.1
+  smooth_page_indicator: ^1.1.0
+  flutter_colorpicker: ^1.1.0
+  cupertino_icons: ^1.0.8
+  dotted_border: ^2.1.0
+  flutter_quill: ^11.5.0
+  supabase_flutter: ^2.0.0
+  image_picker: ^1.0.4
+  file_picker: ^8.0.0
+  url_launcher: ^6.2.4
+  
+  popover: ^0.4.0
+  shimmer: ^3.0.0
+  flutter_slidable: ^4.0.3
+  card_swiper: ^3.0.1
+  
+  # INI YANG PERLU DITAMBAHKAN:
+  # Untuk state management tema (FIX LAG)
+  provider: ^6.1.2 
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0 # Versi umum yang kompatibel
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  uses-material-design: true
+  # === PERBAIKAN DI SINI ===
+  # Pastikan "assets:" memiliki 2 spasi
+  assets:
+    - assets/images/
+    # Pastikan setiap item memiliki 4 spasi
+
+  # ===========================
+
+  # (Sisa komentar font bisa dibiarkan atau dihapus)
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+
