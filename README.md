@@ -45,10 +45,9 @@ Ensure you have the following installed:
 ### 2. Open in VS Code
 Open the project folder in Visual Studio Code:
 
-Bash
-
+```Bash
 code .
-
+```
 ## 📱 Screenshots
 
 <div align="center">
