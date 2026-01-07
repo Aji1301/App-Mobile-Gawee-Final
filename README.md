@@ -48,6 +48,14 @@ Open the project folder in Visual Studio Code:
 ```Bash
 code .
 ```
+(Or manually open VS Code -> File -> Open Folder -> Select the gawee folder)
+
+### 3. Install Dependencies
+Open the integrated terminal in VS Code (Ctrl + backtick) and run:
+```Bash
+flutter pub get
+```
+
 ## 📱 Screenshots
 
 <div align="center">
