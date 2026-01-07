@@ -1,107 +1,107 @@
+<div align="center">
 
-```markdown
-# Gawee - Job Finder Application 🚀
+  <h1>🚀 Gawee</h1>
+  <p><strong>Modern Job Finder Application built with Flutter & Supabase</strong></p>
 
-![Flutter](https://img.shields.io/badge/Flutter-3.0%2B-blue?logo=flutter)
-![Dart](https://img.shields.io/badge/Dart-3.0%2B-blue?logo=dart)
-![Supabase](https://img.shields.io/badge/Backend-Supabase-green?logo=supabase)
-![Status](https://img.shields.io/badge/Status-In%20Development-orange)
+  <p>
+    <a href="https://flutter.dev/">
+      <img src="https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white" alt="Flutter">
+    </a>
+    <a href="https://dart.dev/">
+      <img src="https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+    </a>
+    <a href="https://supabase.com/">
+      <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
+    </a>
+  </p>
 
-**Gawee** is a modern mobile application built with Flutter that connects job seekers with recruiters. It features a seamless onboarding experience, real-time job updates, dynamic job posting, and social authentication, powered by a Supabase backend.
+  <p>
+    <img src="https://img.shields.io/badge/Status-In%20Development-orange?style=flat-square" alt="Status">
+    <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-lightgrey?style=flat-square" alt="Platform">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License">
+  </p>
+
+</div>
+
+<br />
+
+> **Gawee** is a modern mobile application built with Flutter that connects job seekers with recruiters. It features a seamless onboarding experience, real-time job updates, dynamic job posting, and social authentication, powered by a Supabase backend.
 
 ---
 
 ## 📱 Screenshots
 
-| Onboarding | Dashboard | Job Details | Post Job |
-|:---:|:---:|:---:|:---:|
-| <img src="assets/images/onboarding_1.png" width="200" alt="Onboarding"> | <img src="screenshots/dashboard.png" width="200" alt="Dashboard"> | <img src="screenshots/detail.png" width="200" alt="Detail"> | <img src="screenshots/post_job.png" width="200" alt="Post Job"> |
-
-*(Note: Replace the paths above with your actual screenshot paths)*
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Onboarding</b></td>
+      <td align="center"><b>Dashboard</b></td>
+      <td align="center"><b>Job Details</b></td>
+      <td align="center"><b>Post Job</b></td>
+    </tr>
+    <tr>
+      <td><img src="assets/images/onboarding_1.png" width="200" alt="Onboarding Screen"></td>
+      <td><img src="screenshots/dashboard.png" width="200" alt="Dashboard Screen"></td>
+      <td><img src="screenshots/detail.png" width="200" alt="Detail Screen"></td>
+      <td><img src="screenshots/post_job.png" width="200" alt="Post Job Screen"></td>
+    </tr>
+  </table>
+</div>
 
 ---
 
 ## ✨ Key Features
 
-* **🔐 Authentication:**
-    * Secure Email/Password Login & Register.
-    * **Google Sign-In Integration** with auto-sync to user profiles.
-    * Role-based access (Job Seeker / Recruiter).
+### 🔐 Authentication
+- [x] Secure Email/Password Login & Register.
+- [x] **Google Sign-In Integration** with auto-sync to user profiles.
+- [x] Role-based access (Job Seeker / Recruiter).
 
-* **👋 Onboarding & User Experience:**
-    * Interactive Onboarding Carousel with `smooth_page_indicator`.
-    * Role selection screen (Seeker vs Recruiter).
-    * Dark Mode & Light Mode support (`ThemeProvider`).
+### 👋 User Experience
+- [x] Interactive Onboarding Carousel with `smooth_page_indicator`.
+- [x] Role selection screen (Seeker vs Recruiter).
+- [x] Dark Mode & Light Mode support (`ThemeProvider`).
 
-* **🏠 Dashboard:**
-    * **Real-time Stats:** Track "Jobs Applied" and "Interviews" updated via Supabase Realtime.
-    * **Dynamic Categories:** Automatically generated based on available jobs in the database.
-    * **Featured & Recent Jobs:** Horizontal and vertical lists with bookmark functionality.
+### 🏠 Dashboard & Job Management
+- [x] **Real-time Stats:** Track "Jobs Applied" and "Interviews" updated via Supabase Realtime.
+- [x] **Dynamic Categories:** Automatically generated based on available jobs.
+- [x] **Post a Job:** Recruiters can post jobs with dynamic Requirements lists.
+- [x] **Bookmark:** Save favorite jobs for later.
 
-* **💼 Job Management:**
-    * **Post a Job:** Recruiters can post jobs with dynamic **Requirements** (bullet points), Salary Range, and Categories.
-    * **Job Details:** Tabbed view for Job Description, Requirements (dynamically rendered), and Company Gallery.
-    * **Search:** Filter jobs by title or keyword.
-
-* **💬 Chat & Apply:**
-    * Direct Chat feature between applicants and companies.
-    * "Apply Job" mechanism using bottom sheet submission.
+### 💬 Chat & Apply
+- [x] Direct Chat feature between applicants and companies.
+- [x] "Apply Job" mechanism using bottom sheet submission.
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Framework:** [Flutter](https://flutter.dev/)
-* **Language:** Dart
-* **Backend & Database:** [Supabase](https://supabase.com/)
-* **State Management:** Provider
-* **Key Packages:**
-    * `supabase_flutter`: For Auth, Database, and Realtime.
-    * `google_fonts`: For custom typography (Poppins).
-    * `provider`: For managing Theme and User state.
-    * `smooth_page_indicator`: For the onboarding UI.
-    * `google_sign_in`: For Google Authentication.
+| Category | Technology |
+| :--- | :--- |
+| **Framework** | Flutter (Dart) |
+| **Backend** | Supabase (PostgreSQL) |
+| **Auth** | Supabase Auth (Email & Google) |
+| **State Mgt** | Provider |
+| **Fonts** | Google Fonts (Poppins) |
 
 ---
 
-## 🗄️ Database Schema (Supabase)
+## 🗄️ Database Schema
 
-This app requires the following tables in Supabase:
+The application relies on the following table structures in Supabase:
 
-### 1. `profiles`
-Stores user information synced with Auth.
-- `id` (uuid, primary key, references auth.users)
-- `full_name` (text)
-- `email` (text)
-- `avatar_url` (text)
-- `role` (text) - 'seeker' or 'recruiter'
-
-### 2. `jobs`
-Stores job postings.
-- `id` (int8, primary key)
-- `title` (text)
-- `company_name` (text)
-- `location` (text)
-- `salary_range` (text)
-- `description` (text)
-- `requirements` (text) - *Stores multiline text separated by enter*
-- `category` (text)
-- `is_saved` (boolean)
-- `created_by` (uuid)
-
-### 3. `applications`
-Tracks job applications.
-- `id` (int8, primary key)
-- `job_id` (int8, fk)
-- `applicant_id` (uuid, fk)
-- `status` (text) - 'applied', 'interview', 'rejected'
+| Table Name | Description | Key Columns |
+| :--- | :--- | :--- |
+| **`profiles`** | Syncs with Auth Users | `id`, `full_name`, `email`, `role`, `avatar_url` |
+| **`jobs`** | Job Postings | `id`, `title`, `company_name`, `salary_range`, `requirements`, `category` |
+| **`applications`** | Tracks applicants | `id`, `job_id`, `applicant_id`, `status` |
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-* Flutter SDK installed.
+* Flutter SDK installed (3.0+).
 * A Supabase project created.
 
 ### Installation
@@ -118,8 +118,7 @@ Tracks job applications.
     ```
 
 3.  **Configure Supabase**
-    * Create a file `lib/utils/constants.dart` (if not exists) or locate your Supabase initialization config.
-    * Add your Supabase URL and Anon Key:
+    Create a file `lib/utils/constants.dart` and add your keys:
     ```dart
     const supabaseUrl = 'YOUR_SUPABASE_URL';
     const supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY';
@@ -130,29 +129,38 @@ Tracks job applications.
     flutter run
     ```
 
-DIBAWAH INI UNTUK MENGATUR ROLE & ID DI DATABASE👇🏻👇🏻👇🏻👇🏻
+### ⚙️ Role Configuration (Database)
+
+To set a user as a **Company/Recruiter**, run the following SQL query in your Supabase SQL Editor:
+
+```sql
 UPDATE public.profiles
 SET 
-  role = 'company',               -- Mengubah role jadi company
-  company_id = 'GOOGLE-01',       -- ID Unik Perusahaan (PENTING)
-  username = 'Google Indonesia',  -- Nama Perusahaan
-  full_name = 'Recruitment Team', -- Nama HRD
+  role = 'company',                -- Change role to company
+  company_id = 'GOOGLE-01',        -- Unique Company ID
+  username = 'Google Indonesia',   -- Company Name
+  full_name = 'Recruitment Team',  -- HR Name
   job_title = 'HR Manager',
   location = 'Jakarta Selatan'
 WHERE id = (
   SELECT id FROM auth.users WHERE email = 'admin@google.com'
 );
+
+```
+
+> *Note: Change `admin@google.com` to the email of the user you registered.*
+
 ---
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
@@ -162,6 +170,10 @@ This project is licensed under the MIT License.
 
 ---
 
-<center>Made with ❤️ by Team </center>
+<div align="center">
+<p>Made with ❤️ by Team Gawee</p>
+</div>
+
+```
 
 ```
