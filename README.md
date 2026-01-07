@@ -41,6 +41,13 @@ Ensure you have the following installed:
 * **VS Code Extensions**:
     * Flutter (by Dart Code)
     * Dart (by Dart Code)
+ 
+### 2. Open in VS Code
+Open the project folder in Visual Studio Code:
+
+Bash
+
+code .
 
 ## 📱 Screenshots
 
