@@ -42,29 +42,6 @@ Ensure you have the following installed:
     * Flutter (by Dart Code)
     * Dart (by Dart Code)
 
-### 2. Clone the Repository
-Open your terminal (Command Prompt / Terminal) and run:
-
-```bash
-git clone [https://github.com/username/gawee.git](https://github.com/username/gawee.git)
-cd gawee
-3. Open in VS Code
-Open the project folder in Visual Studio Code:
-
-Bash
-
-code .
-(Or manually open VS Code -> File -> Open Folder -> Select the gawee folder)
-
-4. Install Dependencies
-Open the integrated terminal in VS Code (Ctrl + backtick) and run:
-
-Bash
-
-flutter pub get
-Wait until the process finishes downloading all packages.
-
-
 ## 📱 Screenshots
 
 <div align="center">
